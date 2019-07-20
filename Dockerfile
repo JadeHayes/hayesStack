@@ -14,4 +14,4 @@ COPY server.py /app/server.py
 COPY . /app/
 COPY __init__.py /app/__init__.py
 
-CMD ["python", "server.py"]
+CMD ["flask", "run", "-h", "0.0.0.0", "-p 5000"]
